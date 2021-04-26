@@ -13,9 +13,9 @@ public class PrimeNum4 {
 
 		
 			while (div <= Math.sqrt(n)) {// div * div = n
-				if (n == 0 || n == 1) {
-					System.out.println("Not Prime");
-					break; }
+//				if (n == 0 || n == 1) {
+//					System.out.println("Not Prime");
+//					break; }
 				if (n % div == 0) {
 					fact = fact + 1;
 					break;
