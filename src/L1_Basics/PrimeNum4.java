@@ -2,32 +2,26 @@ package L1_Basics;
 
 import java.util.Scanner;
 
-public class PrimeNum3 {
-
+public class PrimeNum4 {
 	public static void main(String[] args) {
 		
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();
 		
-		int count = 2;
+		int div = 2;
 		int fact = 0;
 		
-		while(count <= n/2) {
-			if(n % count == 0) {
+		while(div <= Math.sqrt(n)) { // div * div = n
+			if(n % div == 0) {
 				fact = fact + 1;
 				break;
 			}
-			count = count + 1;
+			div = div + 1;
 		}
-		
 		if(fact > 0) {
 			System.out.println("Not Prime");
-		}else {
+		} else {
 			System.out.println("Prime");
 		}
-		
-		
-
 	}
-
 }
