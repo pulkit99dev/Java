@@ -11,8 +11,8 @@ public class PrimeNum3 {
 		
 		int count = 2;
 		int fact = 0;
-		
-		while(count <= n/2) {
+		int val=n/2;
+		while(count <= val) {
 			if(n % count == 0) {
 				fact = fact + 1;
 				break;
