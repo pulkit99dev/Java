@@ -2,25 +2,25 @@ package Patterns;
 
 import java.util.Scanner;
 
-public class Pattern0 {
+public class Pattern1 {
 
 	public static void main(String[] args) {
-		// straight line of * vertically
 		
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();
+		
 		int r = 1;
 		
 		while(r <= n) {
-			System.out.print("*");
+			
+			for(int c = 1; c <= n; c++) {
+				System.out.print("*");
+			}
 			
 			System.out.println();
-			r =  r + 1;
+			r = r + 1;
 		}
 		
-//		for(int r=1; r<=n ; r++) {
-//			System.out.println("*");
-//		}
 
 	}
 
